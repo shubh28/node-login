@@ -1,6 +1,6 @@
 var User = require('../models/user');
 
-module.exports = function(app,router){
+module.exports = function(router){
 	router.get('/',function(req,res){
 		res.json({message:"Api at api started"});
 	});

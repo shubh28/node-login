@@ -1,7 +1,6 @@
-module.exports = function(app,router){
 
-	require('./signup')(app);
-	require('./user')(app,router);
-	require('./login')(app);
-	
+module.exports = function(app,router){
+	var signup = require('./signup')(app);
+	var user = require('./user')(router);
+	var login = require('./login')(app);	
 };

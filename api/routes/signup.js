@@ -3,7 +3,7 @@ var bcrypt = require('bcrypt');
 var bodyParser = require('body-parser');
 
 module.exports = function(app){
-
+	
 	app.use(bodyParser.urlencoded({extended:false}));
 	app.use(bodyParser.json());
 
@@ -27,4 +27,5 @@ module.exports = function(app){
 				res.json({message:"User Successfully Created"});
 		});
 	});
+	
 };
